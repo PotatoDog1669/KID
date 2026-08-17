@@ -32,5 +32,5 @@ jobs:
           context: .
           file: docker/docker-cuda/Dockerfile.kid
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/kid:latest
+          tags: ghcr.io/potatodog1669/kid:latest
           labels: org.opencontainers.image.source=${{ github.server_url }}/${{ github.repository }}

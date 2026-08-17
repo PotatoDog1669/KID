@@ -1,0 +1,20 @@
+{
+  "task_name": "toxicn_taska",
+  "task_context": "The meme may or may not contain harmful content. Describe objective evidence only, without deciding whether it is harmful.",
+  "evidence_focus": [
+    "Chinese visible text, slang, puns, homophones, meme templates, and English meaning",
+    "whether wording or imagery demeans, stereotypes, stigmatizes, threatens, mocks, or attacks any person, group, identity, nationality, occupation, organization, or otherwise identifiable target",
+    "vulgar insults, profanity, aggressive wording, threats, demeaning comparisons, or generic offensive language",
+    "adult double meanings, body-related euphemisms, sexual metaphors, suggestive scene composition, or intimate role-play wording",
+    "self-mockery, fatigue, giving-up tone, bleak humor, pessimism, low mood, or emotional collapse",
+    "benign or non-attacking readings when the meme appears to be ordinary humor, self-reference, or neutral commentary"
+  ],
+  "forbidden_labels": [
+    "harmful",
+    "non-harmful",
+    "toxic",
+    "non-toxic",
+    "This meme is harmful",
+    "This meme is non-harmful"
+  ]
+}

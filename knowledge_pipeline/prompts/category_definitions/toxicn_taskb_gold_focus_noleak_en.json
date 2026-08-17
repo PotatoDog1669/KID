@@ -1,0 +1,34 @@
+{
+  "toxicn-taskb-all": {
+    "classification_categories": "Non-harmful, Targeted Harmful, Sexual Innuendo, General Offense, or Dispirited Culture.",
+    "category_order": [
+      "Non-harmful",
+      "Targeted Harmful",
+      "Sexual Innuendo",
+      "General Offense",
+      "Dispirited Culture"
+    ],
+    "definitions": {
+      "Non-harmful": "Private focus profile: look for ordinary humor, daily-life commentary, neutral comparison, playful reaction, or context where no concrete attack, adult-coded double meaning, broad vulgar abuse, or bleak self-deprecating life attitude is supported by the image and text.",
+      "Targeted Harmful": "Private focus profile: look for evidence that wording or imagery is aimed at a concrete person, visible individual, named entity, social identity, nationality, gender group, occupation, organization, fandom, game role, or otherwise identifiable target, especially through contempt, stereotyping, demeaning comparison, hostility, or attack-like framing.",
+      "Sexual Innuendo": "Private focus profile: look for adult-coded euphemisms, homophones, body-related metaphors, intimate role-play wording, desire, suggestive pose, adult objects, or image-text double meanings that imply intimate behavior, adult body references, attraction, or adult situations without necessarily being explicit.",
+      "General Offense": "Private focus profile: look for vulgar words, curses, broad insults, threats, aggressive or contemptuous tone, dirty jokes, or derogatory expression where the target is absent, unclear, non-specific, generic, or framed as a broad complaint rather than aimed at a clearly identifiable group or person.",
+      "Dispirited Culture": "Private focus profile: look for self-reference, fatigue, pessimism, failure, collapse, giving up, lying flat, low motivation, being useless, emotional overload, lifestyle decline, nihilistic joking, or bleak self-deprecating humor."
+    }
+  },
+  "toxicn-taskb-harmful": {
+    "classification_categories": "Targeted Harmful, Sexual Innuendo, General Offense, or Dispirited Culture.",
+    "category_order": [
+      "Targeted Harmful",
+      "Sexual Innuendo",
+      "General Offense",
+      "Dispirited Culture"
+    ],
+    "definitions": {
+      "Targeted Harmful": "Private focus profile: look for evidence that wording or imagery is aimed at a concrete person, visible individual, named entity, social identity, nationality, gender group, occupation, organization, fandom, game role, or otherwise identifiable target, especially through contempt, stereotyping, demeaning comparison, hostility, or attack-like framing.",
+      "Sexual Innuendo": "Private focus profile: look for adult-coded euphemisms, homophones, body-related metaphors, intimate role-play wording, desire, suggestive pose, adult objects, or image-text double meanings that imply intimate behavior, adult body references, attraction, or adult situations without necessarily being explicit.",
+      "General Offense": "Private focus profile: look for vulgar words, curses, broad insults, threats, aggressive or contemptuous tone, dirty jokes, or derogatory expression where the target is absent, unclear, non-specific, generic, or framed as a broad complaint rather than aimed at a clearly identifiable group or person.",
+      "Dispirited Culture": "Private focus profile: look for self-reference, fatigue, pessimism, failure, collapse, giving up, lying flat, low motivation, being useless, emotional overload, lifestyle decline, nihilistic joking, or bleak self-deprecating humor."
+    }
+  }
+}

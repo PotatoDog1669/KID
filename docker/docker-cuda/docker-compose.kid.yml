@@ -1,0 +1,17 @@
+services:
+  kid-train:
+    build:
+      context: ../..
+      dockerfile: docker/docker-cuda/Dockerfile.kid
+    image: meme-kid:latest
+    gpus: all
+    env_file:
+      - ../../.env
+    volumes:
+      - ${DATASET_DIR:?Set DATASET_DIR to the local dataset directory}:/app/data:ro
+      - ${MODEL_DIR:?Set MODEL_DIR to the local model directory}:/app/model:ro
+      - ${MEDIA_DIR:?Set MEDIA_DIR to the local media directory}:/app/media:ro
+      - ${OUTPUT_DIR:-../../outputs}:/app/outputs
+      - ${HF_CACHE_DIR:-/tmp/meme-kid-hf-cache}:/root/.cache/huggingface
+    entrypoint: ["bash"]
+    command: ["scripts/kid/train.sh", "configs/kid/toxicn_mm_task_b/kid_qwen2_5vl_7b.yaml"]

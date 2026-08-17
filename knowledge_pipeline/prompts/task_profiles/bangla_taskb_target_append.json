@@ -1,0 +1,26 @@
+{
+  "task_name": "bangla_taskb_target_append",
+  "task_context": "The meme is from BanglaAbuseMeme Task B, where the downstream classifier predicts the type of target in an abusive meme. The teacher should add objective target-related evidence only, while preserving the original description and avoiding any final target-category decision.",
+  "evidence_focus": [
+    "exact Bengali visible text, transliteration when helpful, and concise English meaning",
+    "named people, public figures, political parties, religious groups, gender groups, regional groups, ethnic groups, national groups, social sub-groups, occupations, or other identifiable target mentions",
+    "literal target mentions and surrounding wording that indicate who or what is mocked, blamed, stereotyped, humiliated, threatened, compared, or portrayed negatively",
+    "conservative factual background for Bengali regional identity terms, cultural references, public figures, political or religious entities, and local idioms",
+    "distinguishing whether the wording points to a named individual, a social identity group, a religious or political entity, a gender group, a national/regional group, or an unspecified/general target without outputting the final category label",
+    "image-text relation only when it helps identify the mentioned target"
+  ],
+  "forbidden_labels": [
+    "Political",
+    "Religion",
+    "Individual",
+    "Gender",
+    "National Origin",
+    "Social Sub-groups",
+    "Others",
+    "Target",
+    "The target is",
+    "This meme targets",
+    "final category",
+    "classified as"
+  ]
+}

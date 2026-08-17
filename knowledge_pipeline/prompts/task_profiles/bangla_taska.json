@@ -1,0 +1,20 @@
+{
+  "task_name": "bangla_taska",
+  "task_context": "The meme may or may not contain abusive language or abusive framing. Describe objective evidence only, without deciding whether it is abusive.",
+  "evidence_focus": [
+    "Bengali, Bangla-English, Hindi, Urdu, or English visible text, transliteration when useful, and English meaning",
+    "insults, profanity, slurs, mocking expressions, demeaning comparisons, aggressive wording, threats, or humiliating tone",
+    "religious, gender, political, national, regional, ethnic, social, occupational, or other group references",
+    "named people, public figures, groups, communities, or social sub-groups mentioned or implied",
+    "local cultural references, films, celebrities, political references, regional identity terms, or idioms needed to understand the meme",
+    "benign or non-attacking readings when the meme appears to be ordinary humor or neutral commentary"
+  ],
+  "forbidden_labels": [
+    "Abusive",
+    "Non-abusive",
+    "abusive",
+    "non-abusive",
+    "This meme is abusive",
+    "This meme is non-abusive"
+  ]
+}

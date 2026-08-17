@@ -1,0 +1,19 @@
+{
+  "task_name": "hatefulmemes",
+  "task_context": "The meme may or may not contain identity-based hateful content. Describe factual evidence only, without deciding whether it is hateful.",
+  "evidence_focus": [
+    "protected or identity-related groups such as race, ethnicity, religion, nationality, gender, sexuality, disability, immigration status, or other social identities",
+    "whether text or imagery demeans, stereotypes, excludes, threatens, dehumanizes, mocks, or portrays an identity group negatively",
+    "benign counter-readings when the text explicitly rejects prejudice, describes equality, or is not attacking an identity group",
+    "named people, groups, symbols, slogans, image-text contrast, and identity references",
+    "whether the text is directed at an identity group, a named person, a broad audience, or no protected group"
+  ],
+  "forbidden_labels": [
+    "hateful",
+    "not hateful",
+    "hate",
+    "non-hateful",
+    "This is a hateful meme",
+    "This is not a hateful meme"
+  ]
+}

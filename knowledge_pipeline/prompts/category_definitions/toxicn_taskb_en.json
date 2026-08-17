@@ -1,0 +1,34 @@
+{
+  "toxicn-taskb-harmful": {
+    "classification_categories": "Targeted Harmful, Sexual Innuendo, General Offense, or Dispirited Culture.",
+    "category_order": [
+      "Targeted Harmful",
+      "Sexual Innuendo",
+      "General Offense",
+      "Dispirited Culture"
+    ],
+    "definitions": {
+      "Targeted Harmful": "Content that demeans, stereotypes, stigmatizes, expresses hostility toward, or attacks a specific individual, group, identity, nationality, gender, occupation, organization, or otherwise identifiable target.",
+      "Sexual Innuendo": "Content that implies sexual behavior, sexual body parts, sexual attraction, or adult situations through text, imagery, puns, metaphors, or scene composition, even when not explicitly graphic.",
+      "General Offense": "Content containing vulgar insults, threats, derogatory language, aggressive tone, or offensive expression where the target is not a clearly identifiable specific group or object.",
+      "Dispirited Culture": "Content expressing pessimism, defeatism, self-mockery, low motivation, giving up, lying flat, nihilistic feelings, failure, or a bleak attitude toward life."
+    }
+  },
+  "toxicn-taskb-all": {
+    "classification_categories": "Non-harmful, Targeted Harmful, Sexual Innuendo, General Offense, or Dispirited Culture.",
+    "category_order": [
+      "Non-harmful",
+      "Targeted Harmful",
+      "Sexual Innuendo",
+      "General Offense",
+      "Dispirited Culture"
+    ],
+    "definitions": {
+      "Non-harmful": "Ordinary humor, daily-life commentary, or neutral content without clear attacks, sexual innuendo, generalized offense, or dispirited-culture expression.",
+      "Targeted Harmful": "Content that demeans, stereotypes, stigmatizes, expresses hostility toward, or attacks a specific individual, group, identity, nationality, gender, occupation, organization, or otherwise identifiable target.",
+      "Sexual Innuendo": "Content that implies sexual behavior, sexual body parts, sexual attraction, or adult situations through text, imagery, puns, metaphors, or scene composition, even when not explicitly graphic.",
+      "General Offense": "Content containing vulgar insults, threats, derogatory language, aggressive tone, or offensive expression where the target is not a clearly identifiable specific group or object.",
+      "Dispirited Culture": "Content expressing pessimism, defeatism, self-mockery, low motivation, giving up, lying flat, nihilistic feelings, failure, or a bleak attitude toward life."
+    }
+  }
+}

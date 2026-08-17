@@ -1,0 +1,19 @@
+{
+  "task_name": "mami_taska",
+  "task_context": "The meme may or may not involve gender-related hostility or stereotypes about women. Describe objective evidence only, without deciding whether it is misogynous.",
+  "evidence_focus": [
+    "women, girls, female-coded figures, gendered text, gender roles, domestic roles, appearance judgments, and body-related wording",
+    "whether a woman, women generally, a gender role, a romantic/sexual partner, or a specific person is mocked, demeaned, sexualized, blamed, threatened, or stereotyped",
+    "sexual objectification, body comments, appearance shaming, dominance, coercion, humiliation, or violence involving women",
+    "whether the text is directed at a specific woman, women as a group, men, a relationship scenario, or no gendered target",
+    "benign or non-attacking readings when the meme is ordinary humor, neutral description, or not gender-directed"
+  ],
+  "forbidden_labels": [
+    "misogynous",
+    "not misogynous",
+    "misogyny",
+    "non-misogynous",
+    "Yes",
+    "No"
+  ]
+}

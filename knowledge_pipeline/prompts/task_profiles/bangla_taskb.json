@@ -1,0 +1,19 @@
+{
+  "task_name": "bangla_taskb",
+  "task_context": "The meme may contain abusive framing toward a particular target type. Describe objective target-related evidence only, without deciding the final target group.",
+  "evidence_focus": [
+    "Bengali, Bangla-English, Hindi, Urdu, or English visible text, transliteration when useful, and English meaning",
+    "named people, public figures, parties, religious groups, gender groups, regional groups, ethnic groups, national groups, social sub-groups, occupations, or other identifiable targets",
+    "religious, gender, political, national, regional, social, or occupational references and local cultural context",
+    "who or what is mocked, insulted, blamed, stereotyped, humiliated, threatened, or portrayed negatively",
+    "whether the wording is directed at a named person, a religious or political group, a gender group, a social sub-group, a broad audience, or a generic target, without naming the final category",
+    "image-text relation and cultural context needed to understand the target"
+  ],
+  "forbidden_labels": [
+    "Gender",
+    "Religion",
+    "Political",
+    "Social Sub-groups",
+    "Target"
+  ]
+}

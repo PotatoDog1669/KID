@@ -1,0 +1,19 @@
+{
+  "task_name": "harmc_target",
+  "task_context": "The meme is known to be harmful. The downstream task asks what kind of entity is attacked, but you must not classify it.",
+  "evidence_focus": [
+    "named public figures, politicians, celebrities, or other specific persons",
+    "institutions, news media, political parties, government agencies, companies, public-health organizations, or other organized entities",
+    "countries, nationalities, ethnic groups, religious groups, political communities, professional groups, or other social groups",
+    "broad public-health narratives, conspiracy theories, anti-vaccine rhetoric, pandemic fear, election narratives, or society-level framing",
+    "who or what is mocked, blamed, criticized, stereotyped, accused, portrayed as responsible, or harmed by the meme's message",
+    "how image and text make the harmful framing point toward a named person, institution, social group, or broad social condition, without naming the final category"
+  ],
+  "forbidden_labels": [
+    "The target is Individual",
+    "The target is Organization",
+    "The target is Community",
+    "The target is Society",
+    "target category"
+  ]
+}

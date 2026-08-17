@@ -1,0 +1,20 @@
+{
+  "task_name": "toxicn_taskb",
+  "task_context": "The meme may contain different kinds of harmful, offensive, adult, low-mood, or non-harmful content. Describe objective evidence only, without deciding the final type.",
+  "evidence_focus": [
+    "Chinese internet slang, meme templates, visible text, literal meaning, and internet-context meaning",
+    "visible or implied targets such as named people, groups, identities, occupations, organizations, countries, nationalities, genders, or otherwise identifiable targets",
+    "adult double meanings, body-related euphemisms, sexual metaphors, suggestive imagery, or intimate role-play implications",
+    "generic insults, curses, profanity, contempt, threats, aggressive tone, or demeaning wording without a clear specific target",
+    "self-mockery, fatigue, giving-up tone, bleak humor, pessimism, low motivation, or emotional collapse",
+    "how image and text support, contrast, exaggerate, literalize, satirize, or reframe each other"
+  ],
+  "forbidden_labels": [
+    "Targeted Harmful",
+    "Sexual Innuendo",
+    "General Offense",
+    "Dispirited Culture",
+    "Non-harmful",
+    "category"
+  ]
+}

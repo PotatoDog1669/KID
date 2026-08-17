@@ -1,0 +1,34 @@
+{
+  "toxicn-taskb-harmful": {
+    "classification_categories": "Targeted Harmful, Sexual Innuendo, General Offense, or Dispirited Culture.",
+    "category_order": [
+      "Targeted Harmful",
+      "Sexual Innuendo",
+      "General Offense",
+      "Dispirited Culture"
+    ],
+    "definitions": {
+      "Targeted Harmful": "针对特定个人、群体、身份、国籍、性别、职业、组织或可识别对象的贬低、歧视、污名化、敌意或攻击性表达。",
+      "Sexual Innuendo": "通过文字、画面、双关、隐喻或场景暗示性行为、性器官、性吸引或成人情境，但不一定直接露骨表达。",
+      "General Offense": "包含粗俗辱骂、威胁、贬损、攻击性语气或冒犯表达，但目标不属于明确可识别的特定群体或对象。",
+      "Dispirited Culture": "表达消极、摆烂、躺平、自嘲、厌世、低欲望、失败感或悲观生活态度的网络文化内容。"
+    }
+  },
+  "toxicn-taskb-all": {
+    "classification_categories": "Non-harmful, Targeted Harmful, Sexual Innuendo, General Offense, or Dispirited Culture.",
+    "category_order": [
+      "Non-harmful",
+      "Targeted Harmful",
+      "Sexual Innuendo",
+      "General Offense",
+      "Dispirited Culture"
+    ],
+    "definitions": {
+      "Non-harmful": "不包含明确攻击、色情暗示、泛化冒犯或丧文化表达的普通幽默、日常吐槽或中性内容。",
+      "Targeted Harmful": "针对特定个人、群体、身份、国籍、性别、职业、组织或可识别对象的贬低、歧视、污名化、敌意或攻击性表达。",
+      "Sexual Innuendo": "通过文字、画面、双关、隐喻或场景暗示性行为、性器官、性吸引或成人情境，但不一定直接露骨表达。",
+      "General Offense": "包含粗俗辱骂、威胁、贬损、攻击性语气或冒犯表达，但目标不属于明确可识别的特定群体或对象。",
+      "Dispirited Culture": "表达消极、摆烂、躺平、自嘲、厌世、低欲望、失败感或悲观生活态度的网络文化内容。"
+    }
+  }
+}

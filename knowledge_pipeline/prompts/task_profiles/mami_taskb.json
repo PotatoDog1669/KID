@@ -1,0 +1,20 @@
+{
+  "task_name": "mami_taskb",
+  "task_context": "The meme may involve different kinds of gender-related hostility or stereotypes about women. Describe objective evidence only, without deciding any final subcategory.",
+  "evidence_focus": [
+    "women, girls, female-coded figures, gendered text, gender roles, romantic roles, domestic roles, appearance judgments, and body-related wording",
+    "appearance or body shaming, moral judgment, humiliation, ridicule, or degrading comments aimed at women",
+    "gender stereotypes about ability, behavior, intelligence, sexuality, domestic work, relationships, or social roles",
+    "sexual objectification, reducing women to body parts or sexual availability, suggestive framing, or visual sexualization",
+    "threats, coercion, dominance, physical harm, or violent imagery involving women",
+    "whether the wording targets a specific woman, women generally, a gender role, a romantic/sexual partner, or no gendered target"
+  ],
+  "forbidden_labels": [
+    "shaming",
+    "stereotype",
+    "objectification",
+    "violence",
+    "misogynous",
+    "not misogynous"
+  ]
+}

@@ -2,11 +2,21 @@
 
 The KID release includes a CUDA Dockerfile at `docker/docker-cuda/Dockerfile.kid`. It installs the package versions required by this repository rather than relying on whatever versions happen to be present in a base image.
 
+The repository publishes a ready-to-pull image through GitHub Container Registry after a successful push to `main`:
+
+```bash
+docker pull ghcr.io/potatodog1669/kid:latest
+```
+
+The package may need to be marked **Public** once in the repository's GitHub Packages settings. The image is CUDA-enabled and requires an NVIDIA driver, NVIDIA Container Toolkit, and a compatible GPU on the host.
+
 Build the image from the repository root:
 
 ```bash
 docker build -f docker/docker-cuda/Dockerfile.kid -t meme-kid:latest .
 ```
+
+To use a local base image on a server that already has the dependencies installed, pass `--build-arg BASE_IMAGE=<local-image>`.
 
 Mount datasets read-only and write outputs outside the source tree:
 

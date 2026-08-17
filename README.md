@@ -33,4 +33,28 @@ cp .env.example .env
 bash scripts/kid/train.sh configs/kid/toxicn_mm_task_b/kid_qwen2_5vl_7b.yaml
 ```
 
+### Docker Quick Start
+
+Pull the published CUDA image and run a one-step smoke test before a full experiment:
+
+```bash
+docker pull ghcr.io/potatodog1669/kid:latest
+
+docker run --rm --gpus all --entrypoint bash \
+  -v /path/to/data:/app/data:ro \
+  -v /path/to/model:/app/model:ro \
+  -v /path/to/media:/app/media:ro \
+  -v /path/to/output:/app/outputs \
+  -e MODEL_NAME_OR_PATH=/app/model \
+  -e DATASET_DIR=/app/data \
+  -e MEDIA_DIR=/app/media \
+  -e TRAIN_DATASET=your_train_dataset \
+  -e EVAL_DATASET=your_eval_dataset \
+  -e SMOKE_OUTPUT_DIR=/app/outputs/smoke \
+  ghcr.io/potatodog1669/kid:latest \
+  -lc 'bash scripts/kid/smoke_test.sh'
+```
+
+The smoke test uses two samples and one optimization step. For a full run, replace the final command with `bash scripts/kid/train.sh configs/kid/toxicn_mm_task_b/kid_qwen2_5vl_7b.yaml` and also set `DATA_VERSION` and `RUN_NAME`. See [docs/CONTAINER.md](docs/CONTAINER.md) for dataset naming, Compose, and local-build details.
+
 Read [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md) before training, [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md) before obtaining data, and [docs/CONTAINER.md](docs/CONTAINER.md) for the reproducible CUDA container. The base training framework is derived from LLaMA-Factory; retain its license and citation notices when publishing this repository.

@@ -33,6 +33,30 @@ cp .env.example .env
 bash scripts/kid/train.sh configs/kid/toxicn_mm_task_b/kid_qwen2_5vl_7b.yaml
 ```
 
+### Docker 快速开始
+
+先拉取已发布的 CUDA 镜像，再运行一轮最小烟测：
+
+```bash
+docker pull ghcr.io/potatodog1669/kid:latest
+
+docker run --rm --gpus all --entrypoint bash \
+  -v /path/to/data:/app/data:ro \
+  -v /path/to/model:/app/model:ro \
+  -v /path/to/media:/app/media:ro \
+  -v /path/to/output:/app/outputs \
+  -e MODEL_NAME_OR_PATH=/app/model \
+  -e DATASET_DIR=/app/data \
+  -e MEDIA_DIR=/app/media \
+  -e TRAIN_DATASET=your_train_dataset \
+  -e EVAL_DATASET=your_eval_dataset \
+  -e SMOKE_OUTPUT_DIR=/app/outputs/smoke \
+  ghcr.io/potatodog1669/kid:latest \
+  -lc 'bash scripts/kid/smoke_test.sh'
+```
+
+烟测只使用 2 条样本和 1 个优化步。正式训练时，将最后一行替换为 `bash scripts/kid/train.sh configs/kid/toxicn_mm_task_b/kid_qwen2_5vl_7b.yaml`，并额外设置 `DATA_VERSION` 和 `RUN_NAME`。数据集命名、Compose 和本地构建方式见 [docs/CONTAINER.md](docs/CONTAINER.md)。
+
 训练前请阅读 [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md)，获取数据前请阅读 [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md)。需要一致的 CUDA 依赖环境时，请使用 [docs/CONTAINER.md](docs/CONTAINER.md) 中的 Docker 方案。
 
 ## 许可证与引用
